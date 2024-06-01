@@ -1,83 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/estilo.css">
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <title>Lathos</title>
-    <link rel="stylesheet" href="juegos.css">
-
+    <title>Juego de Preguntas sobre Animales en Extinción</title>
+    <link rel="stylesheet" href="Juegos.css">
 </head>
-
 <body>
-    <nav class="nav-inicio">
-        <div class="navdiv">
-            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
-            <div class="labeldiv">
-                <input type="checkbox" id="menu">
-                <label for="menu">☰</label>
-                <ul class="lista">
-                    <li><a class="activo" href="index.html">Inicio</a></li>
-                    <li><a href="integrantes.html">Integrantes</a></li>
-                    <li><a href="proyecto.html">Proyecto</a></li>
-                    <li><a href="avances.html">Avances</a></li>
-                    <li><a href="juegos.html">Juegos</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
-    <main class="main-inicio">
-        <div class="container mt-5">
-            <div class="card shadow-lg">
-                <div class="card-body">
-                    <h1 class="card-title text-center mb-4">Avances</h1>
-                    <ul class="list-unstyled text-center">
-                        <li><b>Numero del equipo: </b>2</li>
-                        <li><b>Nombre del equipo: </b>Lathos</li>
-                        <li><b>Año y curso:</b> 2024- 13617</li>
-                        <li><b>Materia: </b>Diseño y desarrollo web</li>
-                        <li><b>Docente: </b>Litovicius Patricia Carina</li>
-                    </ul>
-                    <div class="text-center mt-4">
-                        <img src="assets/logo_uade.png" alt="Logo UADE" class="img-fluid logo-uade">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    
-    <footer class="text-center text-lg-start bg-light text-muted">
-        <div class="container d-flex justify-content-center py-5">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">13617 - 2024 - 1C - Noche</h5>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">EQUIPO 2</h5>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">PROFESORA LITOVICIUS PATRICIA CARINA</h5>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">UADE DISEÑO Y DESARROLLO WEB</h5>
-                </div>
-            </div>
-        </div>
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div class="container">
+        <div id="intro-container">
+            <h1>Juego de Preguntas sobre Animales en Extinción</h1>
+            <p><u>Descripción del juego:</u> Este juego trata sobre animales en peligro de extinción. Responde las preguntas correctamente para ganar puntos.</p>
+            <p><u>Reglas:</u> Lee cada pregunta y selecciona la respuesta correcta. Cada respuesta correcta te otorga un punto.</p>
+            <p><u>Autor:</u> Facundo Marianelli Keichian</p>
+            <button id="start-button" class="btn">Iniciar</button>
+        </div>
+        <div id="quiz-container" class="hidden">
+            <div id="question-container"></div>
+            <div id="answer-buttons" class="btn-container"></div>
+            <button id="next-button" class="btn hidden">Siguiente</button>
+        </div>
+        <div id="result-container" class="hidden">
+            <h2 id="result"></h2>
+            <button id="restart-button" class="btn">Reiniciar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
