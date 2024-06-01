@@ -53,7 +53,12 @@ function startGame() {
     score = 0;
     nextButton.classList.add('hidden');
     resultContainer.classList.add('hidden');
+
+    // Ocultar el footer para que el contenido se vea completamente
+    document.querySelector("footer").style.display = "none";
+
     showQuestion();
+
 }
 
 function showQuestion() {
@@ -102,7 +107,18 @@ nextButton.addEventListener('click', () => {
 function showResult() {
     quizContainer.classList.add('hidden');
     resultContainer.classList.remove('hidden');
-    resultText.textContent = `Tu puntuación es ${score} de ${questions.length}`;
+    resultText.textContent = `Tu puntuación fue ${score} de ${questions.length}`;
+
+    // Mostrar el footer nuevamente
+    document.querySelector("footer").style.display = "block";
+}
+
+function restartGame() {
+    resultContainer.classList.add('hidden');
+    introContainer.classList.remove('hidden');
+
+    // Mostrar el footer nuevamente
+    document.querySelector("footer").style.display = "block";
 }
 
 restartButton.addEventListener('click', () => {

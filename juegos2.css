@@ -1,5 +1,6 @@
 @import url('root.css');
 
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -97,6 +98,7 @@ input[type="checkbox"]:checked ~ .lista {
 
 main {
     flex: 1;
+    margin-bottom: calc(100px + 5vh); /* El 5vh es un margen adicional */
 }
 
 footer {
@@ -108,7 +110,11 @@ footer {
     width: 200px;  
     height: auto;  
 }
-
+.footer-abajo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 /* Path: juegos.css */
 
 
@@ -118,6 +124,8 @@ footer {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+
 }
 
 .hidden {
@@ -146,6 +154,11 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+
+#next-button {
+    background-color: #007575;
+}
+
 .container p {
     font-size: 16px; 
     color: #333;
