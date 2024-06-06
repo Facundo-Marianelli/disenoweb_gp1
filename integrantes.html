@@ -23,7 +23,7 @@
             <a href="index.html"><img src="assets/logo.png" alt="Logo" style="height: 40px;"></a>
             <div class="labeldiv">
                 <input type="checkbox" id="menu">
-                <label for="menu">☰</label>
+                <label for="menu" style="color: red;">☰</label>
                 <ul class="lista">
                     <li><a class="activo" href="index.html">Inicio</a></li>
                     <li><a href="integrantes.html">Integrantes</a></li>
@@ -33,6 +33,11 @@
                     <li><button class="btn-conocenos" onclick="window.location.href='conocenos.html'">Conócenos</button></li>
                 </ul>
             </div>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </nav>
 
@@ -91,28 +96,15 @@
         </div>
     </main>
 
-    <footer class="text-center text-lg-start bg-light text-muted">
-        <div class="container d-flex justify-content-center py-5">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">13617 - 2024 - 1C - Noche</h5>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">EQUIPO 2</h5>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">PROFESORA LITOVICIUS PATRICIA CARINA</h5>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">UADE DISEÑO Y DESARROLLO WEB</h5>
-                </div>
-            </div>
+    <footer class="text-center bg-light text-muted">
+        <div class="container py-3">
+            <p>Derechos reservados - Sitio desarrollado para uso educativo - Diseño y desarrollo Web - UADE - 2024</p>
         </div>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

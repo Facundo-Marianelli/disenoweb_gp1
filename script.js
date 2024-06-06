@@ -44,6 +44,14 @@ const resultText = document.getElementById('result');
 const restartButton = document.getElementById('restart-button');
 const startButton = document.getElementById('start-button');
 
+
+
+restartButton.addEventListener('click', () => {
+    resultContainer.classList.add('hidden');
+    introContainer.classList.remove('hidden');
+    suggestionsForm.classList.add('hidden');
+});
+
 startButton.addEventListener('click', startGame);
 
 function startGame() {

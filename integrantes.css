@@ -11,7 +11,6 @@ body {
 }
 
 .nav-inicio {
-
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -49,7 +48,6 @@ body {
     margin: 0;
     display: none;
     position: absolute;
-    background-color: #004d4d;
     top: 2rem;
     right: 0;
     width: 200px;
@@ -63,15 +61,15 @@ body {
     display: block;
     padding: 0.5rem;
     text-decoration: none;
-    color: black;
+    color: var(--color-letra);
     margin-top: 10px;
 }
 
 .lista li a:hover {
-    background-color: #5A8209;
+    background-color: var(--color-secondary);
 }
 .card-custom-bg {
-    background-color: #A4D07B;
+    background-color: var(--color-primary);
     border-radius: 20px;
 }
 
@@ -83,7 +81,7 @@ body {
     margin-top: 10px;
 }
 .lista li button.btn-conocenos {
-    background-color: #5A8209; 
+    background-color: var(--color-secondary);
     color: #fff; 
     border: none;
     padding: 0.5rem 1rem;
@@ -96,7 +94,7 @@ body {
     margin-right: auto; 
 }
 .lista li button.btn-conocenos:hover {
-    background-color: #e14d26; 
+    background-color: var(--color-primary);
 }
 
 input[type="checkbox"]:checked ~ .lista {
@@ -130,11 +128,15 @@ main {
 }
 
 footer {
-    background-color: #cccccc;
+    background-color: var(--color-footerFondo);
     padding: 1rem;
     color: #333333;
 }
 .logo-uade {
     width: 200px;  
     height: auto;  
+}
+
+.menu{
+    color:red
 }
