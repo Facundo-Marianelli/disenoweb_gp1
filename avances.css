@@ -11,10 +11,10 @@ body {
 }
 
 .nav-inicio {
-    background-color: #004d4d;
+
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -40,6 +40,7 @@ body {
     cursor: pointer;
     font-size: 2rem;
     color: #ffffff;
+    text-align: center;
 }
 
 .lista {
@@ -62,11 +63,40 @@ body {
     display: block;
     padding: 0.5rem;
     text-decoration: none;
-    color: #ffffff;
+    color: black;
+    margin-top: 10px;
 }
 
 .lista li a:hover {
-    background-color: #007575;
+    background-color: #5A8209;
+}
+.card-custom-bg {
+    background-color: #A4D07B;
+    border-radius: 20px;
+}
+
+.card-custom-bg .card-img-top {
+    display: block;
+    margin: 0 auto;
+    width: 90%; 
+    border-radius: 10px; 
+    margin-top: 10px;
+}
+.lista li button.btn-conocenos {
+    background-color: #5A8209; 
+    color: #fff; 
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 50px;
+}
+.navdiv img {
+    margin-right: auto; 
+}
+.lista li button.btn-conocenos:hover {
+    background-color: #e14d26; 
 }
 
 input[type="checkbox"]:checked ~ .lista {
