@@ -44,6 +44,44 @@ const resultText = document.getElementById('result');
 const restartButton = document.getElementById('restart-button');
 const startButton = document.getElementById('start-button');
 
+document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("sugerencias");
+    var span = document.getElementsByClassName("close")[0];
+    var form = document.getElementById("sugerenciasForm");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        var formData = new FormData(form);
+        var nombre = formData.get('nombre');
+        var email = formData.get('email');
+        var mensaje = formData.get('mensaje');
+        
+
+        console.log("Nombre:", nombre);
+        console.log("Email:", email);
+        console.log("Mensaje:", mensaje);
+        
+        
+        alert("Formulario enviado con éxito");
+        modal.style.display = "none";
+    });
+});
+
 
 
 restartButton.addEventListener('click', () => {
@@ -56,12 +94,14 @@ startButton.addEventListener('click', startGame);
 
 function startGame() {
     introContainer.classList.add('hidden');
+    
+
     quizContainer.classList.remove('hidden');
     currentQuestionIndex = 0;
     score = 0;
     nextButton.classList.add('hidden');
     resultContainer.classList.add('hidden');
-
+    
     document.querySelector("footer").style.display = "none";
 
     showQuestion();

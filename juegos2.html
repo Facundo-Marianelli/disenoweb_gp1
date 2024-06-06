@@ -15,6 +15,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Integrantes - Lathos</title>
     <link rel="stylesheet" href="juegos2.css">
+
 </head>
 
 <body>
@@ -30,48 +31,71 @@
                     <li><a href="proyecto.html">Proyecto</a></li>
                     <li><a href="avances.html">Avances</a></li>
                     <li><a href="juegos2.html">Juegos</a></li>
-                    <li><button class="btn-conocenos" onclick="window.location.href='conocenos.html'">Conócenos</button></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><button class="btn-conocenos" onclick="window.location.href='https://calendly.com/facumarianelli/lathos-reserva-tu-espacio'">Conócenos</button></li>
                 </ul>
             </div>
         </div>
     </nav>
     <main id="main-content" class="main-inicio">
-    <div class="container">
-        <div id="intro-container">
-            <h1>Explora y Protege: Juegos Educativos sobre la Extinción de Animales</h1>
-            <br>
-            <p>En nuestros juegos educativos, te sumergirás en la emocionante aventura de aprender sobre la extinción de animales y cómo podemos trabajar juntos para preservar la biodiversidad de nuestro planeta.</p>
-            <button id="sugerencias" class="btn">Sugerencias</button>
-
+        <div class="container">
+            <div id="intro-container" class="hidden">
+                <h1>Explora y aprender: Juegos Educativos sobre la Extinción de Animales</h1>
+                <img src="assets/peligro.png" alt="Descripción de la imagen" style="max-width: 100%; height: 220px;">
+                <br>
+                <p>En nuestros juegos educativos, te sumergirás en la emocionante aventura de aprender sobre la extinción de animales y cómo podemos trabajar juntos para preservar la biodiversidad de nuestro planeta.</p>
+                <button id="sugerencias" class="btn">Sugerencias</button>
+            </div>
+            <!--Modal y funcionamiento con js para enviar los datos por mail-->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Sugerencias</h2>
+                    <form id="sugerenciasForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div id="quiz-container" class="hidden">
+                <div id="question-container"></div>
+                <div id="answer-buttons" class="btn-container"></div>
+                <button id="next-button" class="btn hidden">Siguiente</button>
+            </div>
+            <div id="result-container" class="hidden">
+                <h2 id="result"></h2>
+                <button id="restart-button" class="btn">Reiniciar</button>
+            </div>
         </div>
-        <div id="quiz-container" class="hidden">
-            <div id="question-container"></div>
-            <div id="answer-buttons" class="btn-container"></div>
-            <button id="next-button" class="btn hidden">Siguiente</button>
+        <div class="container">
+            <div id="intro-container">
+                <h1>Juego de Preguntas sobre Animales en Extinción</h1><br>
+                <p><u>Descripción del juego:</u> Este juego trata sobre animales en peligro de extinción. Responde las preguntas correctamente para ganar puntos.</p>
+                <p><u>Reglas:</u> Lee cada pregunta y selecciona la respuesta correcta. Cada respuesta correcta te otorga un punto.</p>
+                <p><u>Autor:</u> Facundo Marianelli Keichian</p>
+                <button id="start-button" class="btn">Iniciar</button>
+            </div>
+            <div id="quiz-container" class="hidden">
+                <div id="question-container"></div>
+                <div id="answer-buttons" class="btn-container"></div>
+                <button id="next-button" class="btn hidden">Siguiente</button>
+            </div>
+            <div id="result-container" class="hidden">
+                <h2 id="result"></h2>
+                <button id="restart-button" class="btn">Reiniciar</button>
+            </div>
         </div>
-        <div id="result-container" class="hidden">
-            <h2 id="result"></h2>
-            <button id="restart-button" class="btn">Reiniciar</button>
-        </div>
-    </div>
-    <div class="container">
-        <div id="intro-container">
-            <h1>Juego de Preguntas sobre Animales en Extinción</h1><br>
-            <p><u>Descripción del juego:</u> Este juego trata sobre animales en peligro de extinción. Responde las preguntas correctamente para ganar puntos.</p>
-            <p><u>Reglas:</u> Lee cada pregunta y selecciona la respuesta correcta. Cada respuesta correcta te otorga un punto.</p>
-            <p><u>Autor:</u> Facundo Marianelli Keichian</p>
-            <button id="start-button" class="btn">Iniciar</button>
-        </div>
-        <div id="quiz-container" class="hidden">
-            <div id="question-container"></div>
-            <div id="answer-buttons" class="btn-container"></div>
-            <button id="next-button" class="btn hidden">Siguiente</button>
-        </div>
-        <div id="result-container" class="hidden">
-            <h2 id="result"></h2>
-            <button id="restart-button" class="btn">Reiniciar</button>
-        </div>
-    </div>
     </main>
     <footer class="text-center bg-light text-muted">
         <div class="container py-3">
@@ -80,7 +104,8 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
