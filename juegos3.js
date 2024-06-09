@@ -1,8 +1,8 @@
 const cardsArray = [
-    { name: 'buitre', img: 'images/buitre.jpg' },
-    { name: 'koala', img: 'images/koala.png' },
-    { name: 'lince', img: 'images/lince.jpg' },
-    { name: 'tigre', img: 'images/tigre.png' },
+    { name: 'buitre', img: 'assets/buitre.jpg' },
+    { name: 'koala', img: 'assets/koala.png' },
+    { name: 'lince', img: 'assets/lince.jpg' },
+    { name: 'tigre', img: 'assets/tigre.png' },
 ];
 
 let gameGrid;
