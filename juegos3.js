@@ -1,8 +1,8 @@
 const cardsArray = [
-    { name: 'buitre', img: 'assets/buitre.jpg' },
-    { name: 'koala', img: 'assets/koala.png' },
-    { name: 'lince', img: 'assets/lince.jpg' },
-    { name: 'tigre', img: 'assets/tigre.png' },
+    { name: 'buitre', img: 'assets/j3_gorila.png' },
+    { name: 'koala', img: 'assets/j3_lince.png' },
+    { name: 'lince', img: 'assets/j3_oso.png' },
+    { name: 'tigre', img: 'assets/j3_panda.png' },
 ];
 
 let gameGrid;
@@ -96,6 +96,9 @@ document.getElementById('reset-button').addEventListener('click', () => {
     initializeGame();
     document.getElementById('reset-button').style.display = 'none';
 });
+
+// Inicializar el juego al cargar la página
+initializeGame();
 
 // Inicializar el juego al cargar la página
 initializeGame();
