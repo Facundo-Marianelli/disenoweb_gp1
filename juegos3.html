@@ -7,9 +7,28 @@
     <link rel="stylesheet" href="juegos3.css">
 </head>
 <body>
+    <nav class="nav-inicio">
+        <div class="navdiv">
+            <a href="index.html"><img src="assets/logo.png" alt="Logo"></a>
+            <div class="labeldiv">
+                <input type="checkbox" id="menu">
+                <label for="menu">☰</label>
+                <ul class="lista">
+                    <li><a class="activo" href="index.html">Inicio</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="proyecto.html">Proyecto</a></li>
+                    <li><a href="avances.html">Avances</a></li>
+                    <li><a href="juegos2.html">Juegos</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><button class="btn-conocenos" onclick="window.location.href='https://calendly.com/facumarianelli/lathos-reserva-tu-espacio'">Conócenos</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <h1>Juego de Memoria: Animales en Peligro de Extinción</h1>
     <div class="memory-game"></div>
     <button id="reset-button" style="display: none;">Reiniciar Juego</button>
     <script src="juegos3.js"></script>
 </body>
 </html>
+
