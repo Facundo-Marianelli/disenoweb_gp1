@@ -206,3 +206,12 @@ main {
     display: block;
     margin: 0 auto;
 }
+.card-verde ul {
+    list-style-type: none;
+}
+
+.card-verde ul li {
+    list-style-type: none;
+    font-size: 30px;
+    text-align: center;
+}
