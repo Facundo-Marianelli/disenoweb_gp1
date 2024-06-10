@@ -124,9 +124,9 @@ input[type="checkbox"]:checked ~ .lista {
         padding: 0 1rem;
     }
 }
-
 .card-body p {
     text-align: left;
+    font-size: 20px;
 }
 main {
     flex: 1;
@@ -138,9 +138,11 @@ main {
 }
 .azul_avances{
     color: var(--color-azul);
+    font-size: 60px;
 }
 .verde_avances{
-    color: var(--color-secondary)
+    color: var(--color-secondary);
+    font-size: 60px;
 }
 #mi-footer {
     background-color: var(--color-secondary);
@@ -149,4 +151,20 @@ main {
 }
 .footerLetra{
     color: #ffffff;
+}
+.card-azul{
+    background-color: var(--color-azul);
+}
+.mainTexto{
+    text-align: center;
+    color: var(--color-azul);
+    font-size: 80px;
+}
+.card-verde{
+    background-color: var(--color-primary);
+}
+.mainTextoVerde{
+    text-align: center;
+    color: var(--color-secondary);
+    font-size: 80px;
 }
