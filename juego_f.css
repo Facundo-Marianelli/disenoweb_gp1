@@ -1,0 +1,278 @@
+@import url('root.css');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.nav-inicio {
+
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-inicio img {
+    height: 60px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+}
+
+.labeldiv {
+    position: relative;
+}
+
+.labeldiv input[type="checkbox"] {
+    display: none;
+}
+
+.labeldiv label {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    background-color: #004d4d;
+    top: 2rem;
+    right: 0;
+    width: 200px;
+}
+
+.lista li {
+    border-bottom: 1px solid #ffffff;
+}
+
+.lista li a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+}
+
+.lista li a:hover {
+    background-color: #5A8209;
+}
+.card-custom-bg {
+    background-color: #A4D07B;
+    border-radius: 20px;
+}
+
+.card-custom-bg .card-img-top {
+    display: block;
+    margin: 0 auto;
+    width: 90%; 
+    border-radius: 10px; 
+    margin-top: 10px;
+}
+.lista li button.btn-conocenos {
+    background-color: #5A8209; 
+    color: #fff; 
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 50px;
+}
+.navdiv img {
+    margin-right: auto; 
+}
+.lista li button.btn-conocenos:hover {
+    background-color: var(--color-primary); 
+}
+
+input[type="checkbox"]:checked ~ .lista {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .labeldiv label {
+        display: none;
+    }
+
+    .lista {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+        width: auto;
+    }
+
+    .lista li {
+        border-bottom: none;
+    }
+
+    .lista li a {
+        padding: 0 1rem;
+    }
+}
+
+main {
+    flex: 1;
+    margin-bottom: calc(100px + 5vh); 
+}
+
+footer {
+
+    padding: 1rem;
+    color: #333333;
+}
+.logo-uade {
+    width: 200px;  
+    height: auto;  
+}
+.footer-abajo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.container {
+    text-align: center;
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    background-color: #5A8209;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#next-button {
+    background-color: #007575;
+}
+
+.container p {
+    font-size: 16px; 
+    color: #333;
+    line-height: 1.5; 
+    margin-bottom: 10px;
+    text-align: left;
+}
+.btn-container .btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 5px 0;
+}
+#question-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#question-container img {
+    max-width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .btn-primary {
+    background-color: var(--color-secondary);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  #mi-footer {
+    background-color: #5A8209;
+    padding: 1rem;
+    color: #333333;
+}
+.footerLetra{
+    color: #ffffff;
+}
