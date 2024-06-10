@@ -87,7 +87,7 @@ body {
     color: #fff; 
     border: none;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-left: 50px;
@@ -132,12 +132,21 @@ main {
     flex: 1;
 }
 
-footer {
-    background-color: #cccccc;
-    padding: 1rem;
-    color: #333333;
-}
 .logo-uade {
     width: 200px;  
     height: auto;  
+}
+.azul_avances{
+    color: var(--color-azul);
+}
+.verde_avances{
+    color: var(--color-secondary)
+}
+#mi-footer {
+    background-color: var(--color-secondary);
+    padding: 1rem;
+    color: #333333;
+}
+.footerLetra{
+    color: #ffffff;
 }
