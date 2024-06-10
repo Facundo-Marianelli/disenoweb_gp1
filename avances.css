@@ -126,7 +126,7 @@ input[type="checkbox"]:checked ~ .lista {
 }
 .card-body p {
     text-align: left;
-    font-size: 20px;
+    font-size: 30px;
 }
 main {
     flex: 1;
@@ -167,4 +167,42 @@ main {
     text-align: center;
     color: var(--color-secondary);
     font-size: 80px;
+}
+.cuadrado {
+    width: 100%;
+    padding-top: 100%; 
+    position: relative;
+    margin-bottom: 20px; 
+    border-radius: 20px;
+}
+
+.texto-cuadrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 14px; 
+    color: #000; 
+
+}
+
+.color1 {
+    background-color: #5A8209; 
+}
+
+.color2 {
+    background-color: #A4D07B; 
+}
+
+.color3 {
+    background-color: #7DA9D8; 
+}
+
+.color4 {
+    background-color: #F0EAD6; 
+}
+.centered-image {
+    display: block;
+    margin: 0 auto;
 }
