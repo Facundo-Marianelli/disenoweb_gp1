@@ -15,14 +15,46 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="Logo" style="height: 40px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="integrantes.html">Integrantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="proyecto.html">Proyecto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="avances.html">Avances</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="juegos2.html">Juegos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-success" onclick="window.location.href='https://calendly.com/facumarianelli/lathos-reserva-tu-espacio'">Conócenos</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <main id="main-content" class="main-inicio">
         <div class="container">
             <div id="intro-container">
                 <h1>Juego de Preguntas sobre Animales en Extinción</h1><br>
+                <img src="assets/pyr.jpg" alt="Descripción de la imagen" style="max-width: 100%; height: 220px;"><br><br>
                 <p><u>Descripción del juego:</u> Este juego trata sobre animales en peligro de extinción. Responde las preguntas correctamente para ganar puntos.</p>
                 <p><u>Reglas:</u> Lee cada pregunta y selecciona la respuesta correcta. Cada respuesta correcta te otorga un punto.</p>
                 <p><u>Autor:</u> Facundo Marianelli Keichian</p>
-                <button id="start-button" class="btn">Iniciar</button>
+                <button id="start-button" class="btnSug">Iniciar</button>
             </div>
             <div id="quiz-container" class="hidden">
                 <div id="question-container"></div>
@@ -31,7 +63,7 @@
             </div>
             <div id="result-container" class="hidden">
                 <h2 id="result"></h2>
-                <button id="restart-button" class="btn">Reiniciar</button>
+                <button id="restart-button" class="btnSug">Reiniciar</button>
             </div>
         </div>
     </main>
@@ -51,118 +83,3 @@
 
 </html>
 
-<script>
-    const questions = [
-        {
-            question: "¿Cuál de estos animales está en peligro crítico de extinción?",
-            image: "assets/preg1.jpeg",
-            answers: [
-                { text: "Panda gigante", correct: false },
-                { text: "Rinoceronte de Java", correct: true },
-                { text: "Tigre de Bengala", correct: false },
-                { text: "Elefante africano", correct: false }
-            ]
-        },
-        {
-            question: "¿Cuál es una de las principales amenazas para los osos polares?",
-            image: "assets/preg2.jpeg",
-            answers: [
-                { text: "Cambio climático", correct: true },
-                { text: "Caza furtiva", correct: false },
-                { text: "Deforestación", correct: false },
-                { text: "Contaminación", correct: false }
-            ]
-        },
-        {
-            question: "¿Qué animal marino está en peligro debido a la contaminación plástica?",
-            image: "assets/preg3.jpeg",
-            answers: [
-                { text: "Tortuga marina", correct: true },
-                { text: "Delfín", correct: false },
-                { text: "Tiburón", correct: false },
-                { text: "Pulpo", correct: false }
-            ]
-        }
-    ];
-
-    let currentQuestionIndex = 0;
-    let score = 0;
-
-    const introContainer = document.getElementById('intro-container');
-    const quizContainer = document.getElementById('quiz-container');
-    const questionContainer = document.getElementById('question-container');
-    const answerButtons = document.getElementById('answer-buttons');
-    const nextButton = document.getElementById('next-button');
-    const resultContainer = document.getElementById('result-container');
-    const resultText = document.getElementById('result');
-    const restartButton = document.getElementById('restart-button');
-    const startButton = document.getElementById('start-button');
-
-    restartButton.addEventListener('click', () => {
-        resultContainer.classList.add('hidden');
-        introContainer.classList.remove('hidden');
-    });
-
-    startButton.addEventListener('click', startGame);
-
-    function startGame() {
-        introContainer.classList.add('hidden');
-        quizContainer.classList.remove('hidden');
-        currentQuestionIndex = 0;
-        score = 0;
-        nextButton.classList.add('hidden');
-        resultContainer.classList.add('hidden');
-        document.querySelector("footer").style.display = "none";
-        showQuestion();
-    }
-
-    function showQuestion() {
-        resetState();
-        const currentQuestion = questions[currentQuestionIndex];
-        questionContainer.innerHTML = `<img src="${currentQuestion.image}" alt="Imagen de ${currentQuestion.question}"><p>${currentQuestion.question}</p>`;
-        currentQuestion.answers.forEach(answer => {
-            const button = document.createElement('button');
-            button.textContent = answer.text;
-            button.classList.add('btn');
-            button.addEventListener('click', () => selectAnswer(button, answer));
-            answerButtons.appendChild(button);
-        });
-    }
-
-    function resetState() {
-        nextButton.classList.add('hidden');
-        while (answerButtons.firstChild) {
-            answerButtons.removeChild(answerButtons.firstChild);
-        }
-    }
-
-    function selectAnswer(button, answer) {
-        const correct = answer.correct;
-        if (correct) {
-            score++;
-        }
-        Array.from(answerButtons.children).forEach(btn => {
-            btn.disabled = true;
-            if (btn === button) {
-                btn.style.backgroundColor = correct ? 'green' : 'red';
-            }
-        });
-        nextButton.classList.remove('hidden');
-    }
-
-    nextButton.addEventListener('click', () => {
-        currentQuestionIndex++;
-        if (currentQuestionIndex < questions.length) {
-            showQuestion();
-        } else {
-            showResult();
-        }
-    });
-
-    function showResult() {
-        quizContainer.classList.add('hidden');
-        resultContainer.classList.remove('hidden');
-        resultText.textContent = `Tu puntuación fue ${score} de ${questions.length}`;
-        document.querySelector("footer").style.display = "block";
-    }
-</script>

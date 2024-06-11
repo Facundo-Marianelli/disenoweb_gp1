@@ -10,18 +10,6 @@ body {
     min-height: 100vh;
 }
 
-.nav-inicio {
-
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-inicio img {
-    height: 60px;
-}
-
 .navdiv {
     display: flex;
     align-items: center;
@@ -43,65 +31,17 @@ body {
     text-align: center;
 }
 
-.lista {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-    position: absolute;
-    background-color: #004d4d;
-    top: 2rem;
-    right: 0;
-    width: 200px;
-}
 
-.lista li {
-    border-bottom: 1px solid #ffffff;
-}
 
-.lista li a {
-    display: block;
-    padding: 0.5rem;
-    text-decoration: none;
-    color: black;
-    margin-top: 10px;
-}
 
-.lista li a:hover {
-    background-color: #5A8209;
-}
+
+
 .card-custom-bg {
     background-color: #A4D07B;
     border-radius: 20px;
 }
 
-.card-custom-bg .card-img-top {
-    display: block;
-    margin: 0 auto;
-    width: 90%; 
-    border-radius: 10px; 
-    margin-top: 10px;
-}
-.lista li button.btn-conocenos {
-    background-color: #5A8209; 
-    color: #fff; 
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-left: 50px;
-}
-.navdiv img {
-    margin-right: auto; 
-}
-.lista li button.btn-conocenos:hover {
-    background-color: #e14d26; 
-}
 
-input[type="checkbox"]:checked ~ .lista {
-    display: block;
-}
 
 @media (min-width: 768px) {
     .labeldiv label {
@@ -132,10 +72,6 @@ main {
     flex: 1;
 }
 
-.logo-uade {
-    width: 200px;  
-    height: auto;  
-}
 .azul_avances{
     color: var(--color-azul);
     font-size: 60px;
@@ -214,4 +150,25 @@ main {
     list-style-type: none;
     font-size: 30px;
     text-align: center;
+}
+.navbar-custom {
+    background-color: white;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+    color: black;
+}
+.navbar-custom .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+}
+.nav-item {
+    margin: 0 10px; 
 }

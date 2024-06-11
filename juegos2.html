@@ -19,22 +19,35 @@
 </head>
 
 <body>
-    <nav class="nav-inicio">
-        <div class="navdiv">
-            <a href="index.html"><img src="assets/logo.png" alt="Logo" style="height: 40px;"></a>
-            <div class="labeldiv">
-                <input type="checkbox" id="menu">
-                <label for="menu">☰</label>
-                <ul class="lista">
-                    <li><a class="activo" href="index.html">Inicio</a></li>
-                    <li><a href="integrantes.html">Integrantes</a></li>
-                    <li><a href="proyecto.html">Proyecto</a></li>
-                    <li><a href="avances.html">Avances</a></li>
-                    <li><a href="juegos2.html">Juegos</a></li>
-                    <li><a href="faq.html">FAQs</a></li>
-                    <li><button class="btn-conocenos" onclick="window.location.href='https://calendly.com/facumarianelli/lathos-reserva-tu-espacio'">Conócenos</button></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="Logo" style="height: 40px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="integrantes.html">Integrantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="proyecto.html">Proyecto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="avances.html">Avances</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="juegos2.html">Juegos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-success" onclick="window.location.href='https://calendly.com/facumarianelli/lathos-reserva-tu-espacio'">Conócenos</button>
+                </li>
+            </ul>
         </div>
     </nav>
     <main id="main-content" class="main-inicio">
@@ -42,9 +55,9 @@
             <div id="intro-container" class="hidden">
                 <h1>Explora y aprender: Juegos Educativos sobre la Extinción de Animales</h1>
                 <img src="assets/peligro.png" alt="Descripción de la imagen" style="max-width: 100%; height: 220px;">
-                <br>
+                <br><br>
                 <p>En nuestros juegos educativos, te sumergirás en la emocionante aventura de aprender sobre la extinción de animales y cómo podemos trabajar juntos para preservar la biodiversidad de nuestro planeta.</p>
-                <button id="sugerencias" class="btn">Sugerencias</button>
+                <button id="sugerencias" class="btnSug">Sugerencias</button>
             </div>
 
             <!--Modal y funcionamiento con js para enviar los datos por mail-->
@@ -76,7 +89,7 @@
             </div>
             <div id="result-container" class="hidden">
                 <h2 id="result"></h2>
-                <button id="restart-button" class="btn">Reiniciar</button>
+                <button id="restart-button" class="btnSug">Reiniciar</button>
             </div>
         </div>
         <div class="container">
@@ -85,7 +98,7 @@
                 <p><u>Descripción del juego:</u> Este juego trata sobre animales en peligro de extinción. Responde las preguntas correctamente para ganar puntos.</p>
                 <p><u>Reglas:</u> Lee cada pregunta y selecciona la respuesta correcta. Cada respuesta correcta te otorga un punto.</p>
                 <p><u>Autor:</u> Facundo Marianelli Keichian</p>
-                <button id="start-button" class="btn" onclick="window.location.href='juego_f.html'">Iniciar</button>
+                <button id="start-button" class="btnSug" onclick="window.location.href='juego_f.html'">Iniciar</button>
             </div>
             <div id="quiz-container" class="hidden">
                 <div id="question-container"></div>
@@ -104,7 +117,7 @@
                 <p><u>Descripción del juego:</u>El juego consiste en encontrar los animales en peligro de extinción que sean pares.</p>
                 <p><u>Reglas:</u> Haz click sobre las cartas para visualizar el animal, deberás memorizar la ubicación para encontrar su par.</p>
                 <p><u>Autor:</u> Lucas Larocca</p>
-                <button id="start-button" class="btn" onclick="window.location.href='juegos3.html'">Iniciar</button>
+                <button id="start-button" class="btnSug" onclick="window.location.href='juegos3.html'">Iniciar</button>
             </div>
             <div id="quiz-container" class="hidden">
                 <div id="question-container"></div>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,33 +16,47 @@
     <link rel="stylesheet" href="index.css">
 
 </head>
-
 <body>
-    <nav class="nav-inicio">
-        <div class="navdiv">
-            <a href="index.html"><img src="assets/logo.png" alt="Logo" style="height: 40px;"></a>
-            <div class="labeldiv">
-                <input type="checkbox" id="menu">
-                <label for="menu">☰</label>
-                <ul class="lista">
-                    <li><a class="activo" href="index.html">Inicio</a></li>
-                    <li><a href="integrantes.html">Integrantes</a></li>
-                    <li><a href="proyecto.html">Proyecto</a></li>
-                    <li><a href="avances.html">Avances</a></li>
-                    <li><a href="juegos2.html">Juegos</a></li>
-                    <li><a href="faq.html">FAQs</a></li>
-                    <li><button class="btn-conocenos" onclick="window.location.href='https://calendly.com/facumarianelli/lathos-reserva-tu-espacio'">Conócenos</button></li>
-                </ul>
-            </div>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="Logo" style="height: 40px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="integrantes.html">Integrantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="proyecto.html">Proyecto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="avances.html">Avances</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="juegos2.html">Juegos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-success" onclick="window.location.href='https://calendly.com/facumarianelli/lathos-reserva-tu-espacio'">Conócenos</button>
+                </li>
+            </ul>
         </div>
     </nav>
+
+  
     <header class="text-center mt-5">
         <img src="assets/lathos_logo.png" alt="Descripción de la imagen">
     </header>
     <main class="main-inicio">
         <div class="container mt-5">
             <div class="card shadow-lg">
-                
                 <div class="card-body">
                     <h1 class="card-title text-center mb-4">Datos del equipo</h1>
                     <ul class="list-unstyled text-center">
@@ -67,9 +80,9 @@
         </div>
     </footer>
 
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>

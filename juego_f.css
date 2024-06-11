@@ -68,10 +68,10 @@ body {
 }
 
 .lista li a:hover {
-    background-color: #5A8209;
+    background-color: var(--color-secondary); 
 }
 .card-custom-bg {
-    background-color: #A4D07B;
+    background-color: var(--color-primary);
     border-radius: 20px;
 }
 
@@ -83,7 +83,7 @@ body {
     margin-top: 10px;
 }
 .lista li button.btn-conocenos {
-    background-color: #5A8209; 
+    background-color: var(--color-secondary); 
     color: #fff; 
     border: none;
     padding: 0.5rem 1rem;
@@ -130,11 +130,7 @@ main {
     margin-bottom: calc(100px + 5vh); 
 }
 
-footer {
 
-    padding: 1rem;
-    color: #333333;
-}
 .logo-uade {
     width: 200px;  
     height: auto;  
@@ -148,23 +144,20 @@ footer {
 
 .container {
     text-align: center;
-
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
-
 }
-
 
 
 .hidden {
     display: none;
 }
 
-.btn {
-    background-color: #5A8209;
-    color: white;
+.btnSug {
+    background-color: var(--color-secondary);
+    color: var(--color-secondary);
     border: none;
     padding: 10px 20px;
     text-align: center;
@@ -176,7 +169,7 @@ footer {
 }
 
 .btn:hover {
-    background-color: #45a049;
+    background-color: var(--color-primary);
 }
 
 .btn-container {
@@ -186,7 +179,16 @@ footer {
 }
 
 #next-button {
-    background-color: #007575;
+    background-color: var(--color-secondary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 26px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .container p {
@@ -260,7 +262,7 @@ footer {
   .btn-primary {
     background-color: var(--color-secondary);
     border: none;
-    color: white;
+    color: var(--color-secondary);
     padding: 10px 20px;
     cursor: pointer;
   }
@@ -275,4 +277,52 @@ footer {
 }
 .footerLetra{
     color: #ffffff;
+}
+.navbar-custom {
+    background-color: white;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+    color: black;
+}
+.navbar-custom .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+}
+.nav-item {
+    margin: 0 10px; 
+}
+#start-button{
+    background-color: var(--color-secondary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+#restart-button{
+    background-color: var(--color-secondary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
