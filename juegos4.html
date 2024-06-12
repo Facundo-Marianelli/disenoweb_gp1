@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unir Animales en Extinción</title>
+    <link rel="stylesheet" href="juegos4.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>¡JUGUEMOS!</h1>
+        <div class="game">
+            <div class="references">
+                <div class="reference" data-id="1">Gran felino de rayas negras que habita en bosques y sabanas de Asia. <br>
+                    Causa: Pérdida de hábitat debido a la deforestación y caza furtiva.</div>
+                <div class="reference" data-id="2">Gran simio nativo de Indonesia y Malasia de pelaje rojo anaranjado y muy inteligente. <br> 
+                    Causa: Deforestación y pérdida de hábitat debido a la expansión de plantaciones de aceite de palma.</div>
+                <div class="reference" data-id="3">Reptil marino con caparazón que habita en océanos tropicales y subtropicales.<br>
+                    Causa: Captura incidental en redes de pesca, contaminación y destrucción de playas de anidación.</div>
+                <div class="reference" data-id="5">Mamífero con trompa y grandes orejas, encontrado en África y Asia.<br>
+                    Causa: Caza furtiva por su marfil y pérdida de hábitat debido a la expansión agrícola y urbana.</div>
+                <div class="reference" data-id="6"> Mamífero marsupial de Australia, conocido por su dieta exclusiva de hojas de eucalipto.<br>
+                    Causa: Pérdida de hábitat debido a la deforestación y los incendios forestales.</div>
+                <div class="reference" data-id="8">Ave no voladora con plumaje blanco y negro en su pecho, que habita en la Antártida.<br>
+                    Causa: Cambio climático que afecta el hielo marino donde crían y buscan alimento.</div>
+            </div>
+            <div class="names">
+                <div class="name" data-id="6"><img src="assets/koala.jpeg" alt="Koala">Koala</div>
+                <div class="name" data-id="3"><img src="assets/tortuga.jpeg" alt="Tortuga marina">Tortuga marina</div>
+                <div class="name" data-id="5"><img src="assets/elefante.jpeg" alt="Elefante">Elefante</div>   
+                <div class="name" data-id="1"><img src="assets/tigre.jpeg" alt="Tigre">Tigre</div>
+                <div class="name" data-id="8"><img src="assets/pinguino.jpeg" alt="Pingüino emperador">Pingüino emperador</div>
+                <div class="name" data-id="2"><img src="assets/orangutan.jpeg" alt="Orangután">Orangután</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal al finalizar el juego -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Felicitaciones, has completado el juego.</p>
+            <button id="play-again">Volver a la página de juegos</button>
+        </div>
+    </div>
+    <div class="footer">
+        Derechos reservados - Sitio desarrollado para uso educativo - Diseño y desarrollo Web - UADE - 2024
+    </div>
+    
+    <script src="juegos4.js"></script>
+</body>
+</html>
