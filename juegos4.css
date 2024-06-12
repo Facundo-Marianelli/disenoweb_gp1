@@ -1,0 +1,156 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ajustamos el contenido al principio */
+    align-items: center;
+    min-height: 100vh; /* Usamos min-height para asegurar que el body ocupe al menos toda la altura de la pantalla */
+    margin: 0px;
+    padding: 0px; /* Eliminamos el padding para evitar espacio adicional */
+    position: relative; /* Añadimos position relative */
+}
+
+.container {
+    background-color: #fff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    background-color: #53760D;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+h1 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.game {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 75vh; /* Reduced height for less vertical space */
+}
+
+.references, .names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.references {
+    width: 58%; /* Larger width for references */
+}
+
+.names {
+    width: 40%; /* Smaller width for names */
+}
+
+.reference, .name {
+    background-color: #e7e7e7;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    user-select: none;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    height: 120px; /* Adjusted height for better visibility */
+    display: flex;
+    align-items: center;
+}
+
+.name img {
+    width: 70px; /* Image width */
+    height: 70px; /* Image height */
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.reference:hover, .name:hover {
+    background-color: #d7d7d7;
+}
+
+.reference.selected, .name.selected {
+    border: 2px solid #007BFF;
+}
+
+.line {
+    position: absolute;
+    background-color: #007BFF;
+    width: 2px;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Reducir el margen superior */
+    padding: 40px; /* Aumentar el padding */
+    border: 1px solid #888;
+    width: 90%; /* Aumentar el ancho */
+    max-width: 800px; /* Aumentar el ancho máximo */
+    text-align: center;
+    border-radius: 10px;
+}
+
+.modal-content p {
+    font-size: 24px; /* Aumentar el tamaño de fuente */
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
