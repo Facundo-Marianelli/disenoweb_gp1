@@ -1,3 +1,4 @@
+@import url('root.css');
 
 body {
     font-family: 'Arial', sans-serif;
@@ -12,6 +13,26 @@ body {
     position: relative; /* Añadimos position relative */
 }
 
+.navbar-custom {
+    background-color: white;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+    color: black;
+}
+.navbar-custom .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+}
+
+
 .container {
     background-color: #fff;
     padding: 15px 25px;
@@ -19,7 +40,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 1000px;
-    margin: 30px auto;
+    margin: -20px auto;
     text-align: center;
 }
 
@@ -153,4 +174,69 @@ h1 {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .container {
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .game {
+        flex-direction: column;
+        height: auto;
+    }
+    .references, .names {
+        width: 100%;
+    }
+    .reference, .name {
+        height: auto;
+    }
+    .modal-content {
+        margin: 20% auto;
+        padding: 20px;
+        width: 90%;
+    }
+    .modal-content p {
+        font-size: 20px;
+    }
+    .modal-content button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+}
 
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+    .navbar-brand img {
+        height: 30px;
+    }
+    .name img {
+        width: 50px;
+        height: 50px;
+    }
+    .modal-content p {
+        font-size: 18px;
+    }
+    .modal-content button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+
+/* Estilos adicionales para columnas en dispositivos móviles */
+@media (max-width: 480px) {
+    .game {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .references, .names {
+        width: 48%;
+        margin: 1%;
+    }
+}
