@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Verdadero o Falso</title>
+    <link rel="stylesheet" href="juego6.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="image">
+        <img src="assets\juegos.jpg" alt="Portada Juego Verdadero o falso" height="400px" width="950px">
+    </div>
+    <div id="back">
+        <h1>VERDADERO O FALSO</h1>
+        <h2>Animales en extinción</h2>
+        <div id="question-container">
+            <p id="question">Aca va la pregunta</p>
+            <button onclick="evaluateAnswer(true)">Verdadero</button>
+            <button onclick="evaluateAnswer(false)">Falso</button>
+        </div>
+        <div id="result"></div>
+        <div id="score">
+            <p id="correct-count">Ganaste: 0 puntos</p>
+            <p id="incorrect-count">Perdiste: 0 puntos</p>
+        </div>
+        <div id="restart-container">
+            <button id="restart-button" onclick="restartGame()">Volver a comenzar</button>
+        </div>        
+    </div>
+    <footer>
+        <p>Derechos reservados - Sitio desarrollado para uso educativo - Diseño y desarrollo Web - UADE - 2024</p>
+    </footer>
+    <script src="juego6.js"></script>
+
+</body>
+</html>

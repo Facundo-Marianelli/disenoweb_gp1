@@ -1,0 +1,147 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Tamaño de fuente base */
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #5A8209;
+    font-size: 2rem; /* 32px if base is 16px */
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+#back {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #F0EAD6;
+    margin-bottom: 50px;
+}
+
+button {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    font-size: 1rem; 
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(181, 178, 178);
+    color: white;
+}
+
+button:hover {
+    background-color: #97c340;
+}
+
+#question {
+    background-color: white;
+    color: #333;
+    border: 2px dotted #97c340;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    font-size: 1.25rem; 
+}
+
+#result, #score {
+    text-align: center;
+    font-size: 1rem; 
+}
+
+#score p {
+    margin: 10px 0;
+}
+
+#restart-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#restart-button {
+    display: none;
+    padding: 10px 20px;
+    font-size: 1rem; 
+    cursor: pointer;
+    border: none;
+    background-color: #5A8209;
+    color: white;
+    margin-top: 20px;
+}
+
+#restart-button:hover {
+    background-color: #97c340;
+}
+
+footer {
+    width: 100%;
+    background-color: #5A8209;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; 
+    }
+
+    footer {
+        position: static;
+        padding: 15px 0;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    body, #back {
+        padding: 10px;
+    }
+
+    button {
+        display: block;  
+        width: 80%;      
+        margin: 10px auto;  
+        padding: 12px;   
+        font-size: 1rem; 
+    }
+
+    #question {
+        font-size: 1rem; 
+        width: 90%;      
+        padding: 15px;   
+    }
+
+    #restart-container {
+        flex-direction: column; /* Asegura que los elementos dentro del contenedor se apilen verticalmente */
+    }
+}
