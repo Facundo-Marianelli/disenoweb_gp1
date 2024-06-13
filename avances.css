@@ -128,7 +128,8 @@ main {
 }
 
 .color2 {
-    background-color: #A4D07B; 
+    background-color: #A4D07B;
+    border: 1px solid black;
 }
 
 .color3 {
