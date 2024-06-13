@@ -326,7 +326,7 @@ main {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-.btn-conocenos {
+#conocenos {
     border-radius: 20px; 
     padding: 10px 20px; 
     background-color: var(--color-secondary); 
@@ -336,6 +336,6 @@ main {
     transition: background-color 0.3s ease; 
 }
 
-.btn-conocenos:hover {
+#conocenos:hover {
     background-color: var(--color-primary); 
 }

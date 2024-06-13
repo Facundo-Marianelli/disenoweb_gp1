@@ -279,3 +279,8 @@ main {
 .btn-conocenos:hover {
     background-color: var(--color-primary); 
 }
+#TextoIntroductorio{
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0;
+}
