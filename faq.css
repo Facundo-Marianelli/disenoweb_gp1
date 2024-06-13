@@ -129,6 +129,28 @@ main {
     flex: 1;
 }
 
+.custom-card {
+    max-width: 900px; /* Ajusta el tamaño según sea necesario */
+    margin: 0 auto; /* Centra el div horizontalmente */
+    border-radius: 20px;
+    background-color: #cce7ff; /* Border radius para las esquinas redondeadas */
+}
+.custom-text {
+    font-size: 1.50rem; /* Agranda el tamaño de la letra */
+}
+
+.custom-card2 {
+    max-width: 900px; /* Ajusta el tamaño según sea necesario */
+    margin: 0 auto; /* Centra el div horizontalmente */
+    border-radius: 20px; /* Border radius para las esquinas redondeadas */
+}
+.custom-text2 {
+    font-size: 1.50rem; /* Agranda el tamaño de la letra */
+}
+.question {
+    font-weight: bold;
+    color: #A4D07B;; /* Negrita para la pregunta */
+}
 footer {
     background-color: #cccccc;
     padding: 1rem;
@@ -166,4 +188,17 @@ footer {
 }
 .nav-item {
     margin: 0 10px; 
+}
+.btn-conocenos {
+    border-radius: 20px; 
+    padding: 10px 20px; 
+    background-color: var(--color-secondary); 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn-conocenos:hover {
+    background-color: var(--color-primary); 
 }

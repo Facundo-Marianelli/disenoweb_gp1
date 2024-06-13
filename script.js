@@ -154,6 +154,9 @@ nextButton.addEventListener('click', () => {
 function showResult() {
     quizContainer.classList.add('hidden');
     resultContainer.classList.remove('hidden');
+
+    
+
     resultText.textContent = `Tu puntuación fue ${score} de ${questions.length}`;
 
     document.querySelector("footer").style.display = "block";

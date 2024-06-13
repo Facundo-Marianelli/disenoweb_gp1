@@ -67,3 +67,16 @@ body {
 .footerLetra {
     color: #ffffff;
 }
+.btn-conocenos {
+    border-radius: 20px; 
+    padding: 10px 20px; 
+    background-color: var(--color-secondary); 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn-conocenos:hover {
+    background-color: var(--color-primary); 
+}
