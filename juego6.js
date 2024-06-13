@@ -48,7 +48,9 @@ function endGame() {
     document.getElementById('score').textContent = `Ganaste: ${correctCount} puntos. Perdiste: ${incorrectCount} puntos.`;
     document.getElementById('restart-button').style.display = 'block'; 
 }
-
+function goBack() {
+    window.history.back();
+}
 function restartGame() {
     currentQuestionIndex = 0;
     correctCount = 0;

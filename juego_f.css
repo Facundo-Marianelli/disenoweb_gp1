@@ -308,7 +308,7 @@ main {
     font-size: 20px;
     font-family: sans-serif;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
 
