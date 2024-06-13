@@ -97,7 +97,7 @@ main {
     font-size: 80px;
 }
 .card-verde{
-    background-color: var(--color-primary);
+    background-color: #E6F2DB
 }
 .mainTextoVerde{
     text-align: center;
