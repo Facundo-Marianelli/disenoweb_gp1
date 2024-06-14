@@ -72,6 +72,7 @@ main {
     flex: 1;
 }
 
+
 .azul_avances{
     color: var(--color-azul);
     font-size: 60px;
@@ -185,4 +186,9 @@ main {
 
 .btn-conocenos:hover {
     background-color: var(--color-primary); 
+}
+@media (max-width: 576px) {
+    .cuadrado .texto-cuadrado {
+        font-size: 12px; 
+    }
 }
