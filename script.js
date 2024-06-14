@@ -34,6 +34,12 @@ const questions = [
 let currentQuestionIndex = 0;
 let score = 0;
 
+$(document).ready(function(){
+    $('.carousel').carousel({
+        interval: 3000 
+    });
+});
+
 const introContainer = document.getElementById('intro-container');
 const quizContainer = document.getElementById('quiz-container');
 const questionContainer = document.getElementById('question-container');

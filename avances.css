@@ -187,7 +187,7 @@ main {
 .btn-conocenos:hover {
     background-color: var(--color-primary); 
 }
-@media (max-width: 576px) {
+@media (max-width: 788px) {
     .cuadrado .texto-cuadrado {
         font-size: 12px; 
     }

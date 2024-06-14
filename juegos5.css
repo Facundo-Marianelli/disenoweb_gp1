@@ -177,3 +177,28 @@ input[type="checkbox"]:checked ~ .lista {
 .nav-item {
     margin: 0 10px; 
 }
+#button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.btn-conocenos {
+    border-radius: 20px; 
+    padding: 10px 20px; 
+    background-color: var(--color-secondary); 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn-conocenos:hover {
+    background-color: var(--color-primary); 
+}
+#TextoIntroductorio{
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0;
+}
