@@ -38,7 +38,8 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-left: 50px;
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+}
 
 
 .video-container {
@@ -78,5 +79,5 @@ body {
 }
 
 .btn-conocenos:hover {
-    background-color: var(--color-primary); 
+    background-color: var(--color-secondary); 
 }
